@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="CWA Help Desk Appointment"/>
+  <meta name="keywords" content="HTML, Form, tags"/>
+  <meta name="author" content="Minh Triet"/>
+  <title>CWA Help Desk Appointment</title>
+</head>
+<body>
+<a href="https://swinburne.edu.au"><img src="logo.png"></a>
+<h1>CWA Help Desk Appointment</h1>
+<p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+<p>Check Blackboard for when CWA tutors will be there.</p>
+
+<form method="post" action="">
+	<fieldset>
+		<legend>Student details</legend>
+	<p><label for="studentid">Student ID</label>
+		<input type="text" name="Student ID" id="studentid" maxlength="8" size="10" required="required"/>
+	</p>
+	<p><label for="email">Given Name</label>
+      	<input type="text" name="givenname" id="givenname" required="required"/>
+	</p>
+	<p><label for="email">Family Name</label>
+      	<input type="text" name="familyname" id="familyname" required="required"/>
+	</p>
+	</fieldset>
+	<fieldset>
+		<legend>Your unit</legend>
+		<p><label for="unit">Unit</label>
+			<input type="radio" name="unit" id="COS10011" required="required">COS10011</input>
+			<input type="radio" name="unit" id="COS60004">COS60004</input>
+			<input type="radio" name="unit" id="COS60007">COS60007</input>
+		</p>
+		<p><label for="tutor">Your Tutor</label>
+			<select name="tutor" id="tutor">
+				<option value="">Please Select</option>
+				<option value="burmese">Burmese</option>
+				<option value="manx">Manx</option>
+				<option value="ragdoll">Ragdoll</option>
+				<option value="russian">Russian Blue</option>
+				<option value="siamese">Siamese</option>
+				<option value="other">Other</option>
+			</select>
+		<fieldset>
+			<legend>Issue</legend>
+				<input type="checkbox" id="HTML" name="issue" value="HTML" checked="checked">HTML</input>
+				<input type="checkbox" id="CSS" name="issue" value="CSS"/>CSS</input>
+				<input type="checkbox" id="JavaScript" name="issue" value="JavaScript">JavaScript</input>
+				<input type="checkbox" id="PHP" name="issue" value="PHP"/>PHP</input>
+				<input type="checkbox" id="MySQL" name="issue" value="MySQL"/>MySQL</input>
+			<p><label for="desc">Description of Issue</label>
+			<textarea placeholder="Write description of your problem here..." name="desc" id="desc"></textarea>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Preferred Date / Time</legend>
+			<p><label for="date">Date</label>
+				<input type="text" id="date" name="Date" placeholder="dd/mm/yyyy"/>
+			</p>
+			<p><label for="time">Time</label>
+				<input type="text" id="time" name="Time" placeholder="00&colon;00"/>
+			</p>
+		</fieldset>
+		<button type="submit">Book</button>
+		<button type="reset"/>Reset Form</button>
+	</fieldset>
+</form>
+</body>
+</html>
