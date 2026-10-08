@@ -1,2 +1,2 @@
-# lab02
-Swinburne
+# lab  
+Swinburne Lab Assignments for course COS10026
