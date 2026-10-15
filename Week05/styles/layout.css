@@ -6,7 +6,6 @@ last modified: 15/10/2026
 description: Week 5 layout for lab05.html; loaded after lab04.css.
 */
 
-/* Keep the aside visible when the pointer moves over it. */
 aside:hover {
     display: block;
 }
